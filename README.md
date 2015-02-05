@@ -31,14 +31,14 @@ To see what styles change between baseline and :hover (or :active, or any other 
 
 **Note:** As far as I can tell from researching, the consensus online is that it is not possible to programatically trigger a :hover pseudo-class state using normal JS/jQuery. This seems to be something in the browser, not in the DOM. Hence why it's necessary to cause it manually.
 
-## Adding to the HTML example 100Buttons page
-In order to display a website's button style on the 100Buttons.html page from `yoursite.com` you will need to:
+## Adding to the HTML example buttons page
+In order to display a website's button style on the buttons.html page from `yoursite.com` you will need to:
  1. Copy the "EXAMPLE" part in the `<style>` tag at the top of the page
  2. Rename the root selector from `.example` to `.yoursite`
  3. Copy the 4 lines of HTML containing the `<div class="primary button">`
  4. Ensure that the root node has the same selector as from the `<style>` tag
  5. Add a JSON object for `yoursite: { buttons: { primary: '', secondary: ''}}`
- 5. Run the above steps using the `themes.buttons.primary` xpath
- 6. Run the above steps using the `themes.buttons.secondary` xpath
+ 5. Run the above steps using the `themes.buttons.primary` xpath once for baseline, then the 'hover' part
+ 6. Run the above steps using the `themes.buttons.secondary` xpath once for baseline, then the 'hover' part
 
 
