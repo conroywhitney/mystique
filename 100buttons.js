@@ -4,7 +4,7 @@ var
   themes   = {
     dropbox: {
       buttons: {
-        primary:   '//*[@id="signup-container"]/div[2]/div/form/button',
+        primary:   '//*[@id="page-content"]/div[3]/div[2]/a[1]',
         secondary: '//*[@id="page-content"]/div[3]/div[2]/a[2]'
       },
       text: {
@@ -67,6 +67,7 @@ var
 /* --------------------------------------------- */
   $elem  = $x(xpath)[0],
   stylez = window.getComputedStyle($elem, null),
+  hoverz = window.getComputedStyle($elem, ':hover'),
   iframe = document.createElement('iframe'),
   baseline = null
 ;
@@ -81,6 +82,7 @@ for(var i = 0; i < dimensions.length; i++) {
   var
     style = dimensions[i],
     value = stylez.getPropertyValue(style),
+    hover = hoverz.getPropertyValue(style),
     orig  = baseline.getPropertyValue(style)
   ;
   if (value != orig) {
@@ -88,3 +90,16 @@ for(var i = 0; i < dimensions.length; i++) {
   }
 }
 
+
+console.log("\n\nhover\n");
+for(var i = 0; i < dimensions.length; i++) {
+  var
+    style = dimensions[i],
+    value = stylez.getPropertyValue(style),
+    hover = hoverz.getPropertyValue(style),
+    orig  = baseline.getPropertyValue(style)
+  ;
+  if (hover != value) {
+    console.log(style + ": "+ hover + ";");
+  }
+}
