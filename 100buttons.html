@@ -6,6 +6,24 @@
 
 
 /*****************
+     EXAMPLE
+*****************/
+
+.example .primary.button {
+}
+
+.example .primary.button:hover {
+}
+
+.example .secondary.button {
+}
+
+.example .secondary.button:hover {
+}
+
+
+
+/*****************
    SEMANTIC UI
 *****************/
 
@@ -233,6 +251,83 @@
 }
 
 
+
+/*****************
+     FACEBOOK
+*****************/
+
+.facebook .primary.button {
+  display: inline-block;
+  padding: 1px 0px 2px;
+  font: normal normal bold normal 11px/13px 'lucida grande', tahoma, verdana, arial, sans-serif;
+  border: 0px none rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 13px;
+  cursor: pointer;
+}
+
+.facebook .primary.button {
+  background-image: url(/rsrc.php/v2/yK/r/dmx7BT5DAV-.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -49px;
+  background-color: #5b74a8;
+  border-color: #2f477a #29447e #1a356e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.facebook .primary.button:hover {
+  /* Facebook doesn't do hovers on buttons */
+}
+
+.facebook .secondary.button {
+  display: inline-block;
+  padding: 1px 0px 2px;
+  font: normal normal bold normal 11px/13px 'lucida grande', tahoma, verdana, arial, sans-serif;
+  border: 0px none rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
+  text-align: center;
+  line-height: 13px;
+  cursor: pointer;
+}
+
+.facebook .secondary.button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  background-image: url(/rsrc.php/v2/yK/r/dmx7BT5DAV-.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -98px;
+  background-color: #e9eaed;
+  border: 1px solid #999;
+  border-bottom-color: #888;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.facebook .secondary.button:hover {
+  /* Facebook doesn't do hovers on buttons */
+}
+
+
+
 /*****************
   GENERAL LAYOUT
 *****************/
@@ -278,14 +373,14 @@
 
 <div class="vertically centered container">
 
-  <div class="semanticui example">
-    <div class="primary button">Semantic UI</div>
-    <div class="secondary button">Semantic UI</div>
-  </div>
-
   <div class="dropbox example">
     <div class="primary button">Dropbox</div>
     <div class="secondary button">Dropbox</div>
+  </div>
+
+  <div class="semanticui example">
+    <div class="primary button">Semantic UI</div>
+    <div class="secondary button">Semantic UI</div>
   </div>
 
   <div class="slack example">
@@ -303,6 +398,10 @@
     <div class="secondary button">GitHub</div>
   </div>
 
+  <div class="facebook example">
+    <div class="primary button">Facebook</div>
+    <div class="secondary button">Facebook</div>
+  </div>
 </div>
 
 </body>

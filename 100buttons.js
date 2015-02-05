@@ -63,6 +63,12 @@ var
         primary:   '//*[@id="site-container"]/div[1]/div[1]/form/button',
         secondary: '/html/body/div[1]/div[1]/div/div[1]/a[2]'
       }
+    },
+    facebook: {
+      buttons: {
+        primary:   '//*[@id="u_0_l"]',
+        secondary: '//*[@id="content"]/div/div[1]/div/div/div[1]/div/div/a/span'
+      }
     }
   },
   theme  = themes[domain],
