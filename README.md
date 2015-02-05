@@ -1,7 +1,7 @@
 # Mystique
 A prototype javascript tool for isolating the set of CSS attributes which are the minimum necessary to achieve the desired aesthetic of a given DOM element.
 
-#####[Demo of button styles copied from popular websites using this tool &rarr;](http://www.conroywhitney.com/100buttons.html)
+#####[Demo of button styles copied from popular websites using this tool &rarr;](http://www.conroywhitney.com/projects/mystique/buttons.html)
 
 ## Approach
 Given that all themes are simply variations on a basline; if it's possible to isolate exactly what's different about an element (padding, border, font, etc.), then it's possible to duplicate that theme. However, since CSS is, by definition, cascading, and through a myriad of selectors, it's difficult to figure out exactly what styles are affeting a given element. 
