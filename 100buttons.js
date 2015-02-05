@@ -32,8 +32,8 @@ var
     },
     getbootstrap: {
       buttons: {
-        primary:   '/html/body/div[2]/div/a',
-        secondary: '//*[@id="content"]/div/p[2]/a'
+        primary:   '/html/body/div[2]/div/div[1]/div[7]/div[10]/p[1]/button[1]',
+        secondary: '/html/body/div[2]/div/div[1]/div[7]/div[10]/p[1]/button[2]'
       },
       text: {
         primary:   '/html/body/div[1]/div/h2',

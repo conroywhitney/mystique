@@ -4,6 +4,11 @@
 
 <style type="text/css">
 
+
+/*****************
+   SEMANTIC UI
+*****************/
+
 .semanticui .primary.button {
   display: inline-block;
   padding: 12.5713596343994px 24px;
@@ -21,8 +26,36 @@
 }
 
 .semanticui .primary.button:hover {
-
+  /* Not sure why but nothing different was detected by the 100buttons.js tool... */
 }
+
+.semanticui .secondary.button {
+  display: inline-block;
+  padding: 12.5713596343994px 24px;
+  min-height: 16px;
+  font: normal normal bold normal 16px/16px Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  border: 0px none rgba(0, 0, 0, 0.6);
+  border-radius: 3.99979996681213px;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgb(224, 224, 224) none repeat scroll 0px 0px / auto padding-box border-box;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 1px inset, rgba(39, 41, 43, 0.14902) 0px 0px 0px 0px inset;
+  line-height: 16px;
+  cursor: pointer;
+  transition: opacity 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s, box-shadow 0.1s ease 0s, background 0.1s ease 0s;
+}
+
+.semanticui .secondary.button:hover {
+  border: 0px none rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  background: rgb(232, 232, 232) none repeat scroll 0px 0px / auto padding-box border-box;
+}
+
+
+
+/*****************
+    DROPBOX
+*****************/
 
 .dropbox .primary.button {
   display: inline-block;
@@ -36,13 +69,35 @@
   cursor: pointer;
 }
 
-.dropbox .primary.button {
+.dropbox .button {
   width: 150px;
 }
 
 .dropbox .primary.button:hover {
   background: rgba(0, 0, 0, 0) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(22, 142, 239)), to(rgb(0, 126, 229))) repeat scroll 0% 0% / auto padding-box border-box;
 }
+
+.dropbox .secondary.button {
+  display: inline-block;
+  padding: 15px 0px;
+  font: normal normal normal normal 14px/normal 'Open Sans', 'lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  color: rgb(71, 82, 93);
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropbox .secondary.button:hover {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 254)), to(rgb(242, 242, 242))) repeat scroll 0% 0% / auto padding-box border-box;
+}
+
+
+
+/*****************
+      SLACK
+*****************/
 
 .slack .primary.button {
   display: inline-block;
@@ -69,13 +124,38 @@
   background: rgb(61, 167, 242) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 
+.slack .secondary.button {
+  display: inline;
+  padding: 8px 20px;
+  font: normal normal bold normal 16px/48px Lato, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 4px;
+  line-height: 48px;
+}
+
+.slack .secondary.button:hover {
+  color: rgb(85, 84, 89);
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+  text-shadow: none;
+}
+
+
+
+/*****************
+    BOOTSTRAP
+*****************/
+
 .bootstrap .primary.button {
   display: inline-block;
   padding: 10px 16px;
   font: normal normal normal normal 18px/24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border: 1px solid rgb(86, 61, 124);
+  border: 1px solid rgb(46, 109, 164);
   border-radius: 6px;
-  color: rgb(86, 61, 124);
+  color: rgb(255, 255, 255);
+  background: rgb(51, 122, 183) none repeat scroll 0% 0% / auto padding-box border-box;
   text-align: center;
   line-height: 24px;
   vertical-align: middle;
@@ -83,10 +163,33 @@
 }
 
 .bootstrap .primary.button:hover {
-  color: rgb(255, 255, 255);
-  background: rgb(86, 61, 124) none repeat scroll 0% 0% / auto padding-box border-box;
-  box-shadow: rgba(0, 0, 0, 0.121569) 0px 3px 5px 0px inset;
+  border: 1px solid rgb(32, 77, 116);
+  background: rgb(40, 96, 144) none repeat scroll 0% 0% / auto padding-box border-box;
 }
+
+.bootstrap .secondary.button {
+  display: inline-block;
+  padding: 10px 16px;
+  font: normal normal normal normal 18px/24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 6px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+  text-align: center;
+  line-height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.bootstrap .secondary.button:hover {
+  border: 1px solid rgb(173, 173, 173);
+  background: rgb(230, 230, 230) none repeat scroll 0% 0% / auto padding-box border-box;
+}
+
+
+
+/*****************
+  GENERAL LAYOUT
+*****************/
 
 .body {
 	text-align: center;
@@ -110,14 +213,15 @@
 }
 
 .example {
-	width: 25%;
-	overflow: hidden;
-	margin: 25px auto;
+  width: 25%;
+  overflow: hidden;
+  margin: 25px auto;
+  clear: both;
 }
 
-.example div {
-	float: left;
-	clear: both;
+.example .button {
+  float: left;
+  margin-right: 25px;
 }
 
 </style>
@@ -128,21 +232,25 @@
 
 <div class="vertically centered container">
 
-	<div class="semanticui example">
-		<div class="primary button">Semantic UI</div>
-	</div>
-	
-	<div class="dropbox example">
-		<div class="primary button">Dropbox</div>
-	</div>
-	
-	<div class="slack example">
-		<div class="primary button">Slack</div>
-	</div>
-	
-	<div class="bootstrap example">
-		<div class="primary button">Bootstrap</div>
-	</div>
+  <div class="semanticui example">
+    <div class="primary button">Semantic UI</div>
+    <div class="secondary button">Semantic UI</div>
+  </div>
+
+  <div class="dropbox example">
+    <div class="primary button">Dropbox</div>
+    <div class="secondary button">Dropbox</div>
+  </div>
+
+  <div class="slack example">
+    <div class="primary button">Slack</div>
+    <div class="secondary button">Slack</div>
+  </div>
+
+  <div class="bootstrap example">
+    <div class="primary button">Bootstrap</div>
+    <div class="secondary button">Bootstrap</div>
+  </div>
 
 </div>
 
