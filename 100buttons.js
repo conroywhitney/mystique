@@ -60,7 +60,7 @@ var
     }
   },
   theme  = themes[domain],
-  dimensions = ['display', 'padding', 'min-height', 'max-height', 'min-width', 'max-width', 'font', 'border', 'border-radius', 'color', 'background', 'text-align', 'text-decoration', 'text-shadow', 'box-shadow', 'line-height', 'vertical-align'],
+  dimensions = ['display', 'padding', 'min-height', 'max-height', 'min-width', 'max-width', 'font', 'border', 'border-radius', 'color', 'background', 'text-align', 'text-decoration', 'text-shadow', 'box-shadow', 'line-height', 'vertical-align', 'cursor'],
 /* --------------------------------------------- */
 /* CHANGE THIS TO WHICH ITEM YOU WANT TO INSPECT */
   xpath  = theme.buttons.primary,
