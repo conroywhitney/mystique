@@ -57,13 +57,19 @@ var
       inputs: {
         text: '//*[@id="example"]/div[4]/div[1]/div[4]/div/div/form/div/div/input'
       }
+    },
+    github: {
+      buttons: {
+        primary:   '//*[@id="site-container"]/div[1]/div[1]/form/button',
+        secondary: '/html/body/div[1]/div[1]/div/div[1]/a[2]'
+      }
     }
   },
   theme  = themes[domain],
   dimensions = ['display', 'padding', 'min-height', 'max-height', 'min-width', 'max-width', 'font', 'border', 'border-radius', 'color', 'background', 'text-align', 'text-decoration', 'text-shadow', 'box-shadow', 'line-height', 'vertical-align', 'cursor', 'transition'],
 /* --------------------------------------------- */
 /* CHANGE THIS TO WHICH ITEM YOU WANT TO INSPECT */
-  xpath  = theme.buttons.primary,
+  xpath  = theme.buttons.secondary,
 /* --------------------------------------------- */
   $elem  = $x(xpath)[0],
   stylez = window.getComputedStyle($elem, null),
