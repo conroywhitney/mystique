@@ -60,16 +60,17 @@ var
     }
   },
   theme  = themes[domain],
-  dimensions = ['display', 'padding', 'min-height', 'max-height', 'min-width', 'max-width', 'font', 'border', 'border-radius', 'color', 'background', 'text-align', 'text-decoration', 'text-shadow', 'box-shadow', 'line-height', 'vertical-align', 'cursor'],
+  dimensions = ['display', 'padding', 'min-height', 'max-height', 'min-width', 'max-width', 'font', 'border', 'border-radius', 'color', 'background', 'text-align', 'text-decoration', 'text-shadow', 'box-shadow', 'line-height', 'vertical-align', 'cursor', 'transition'],
 /* --------------------------------------------- */
 /* CHANGE THIS TO WHICH ITEM YOU WANT TO INSPECT */
   xpath  = theme.buttons.primary,
 /* --------------------------------------------- */
   $elem  = $x(xpath)[0],
   stylez = window.getComputedStyle($elem, null),
-  hoverz = window.getComputedStyle($elem, ':hover'),
+  hoverz = null,
   iframe = document.createElement('iframe'),
-  baseline = null
+  baseline = null,
+  memory = []
 ;
 
 iframe.style.display = "none";
@@ -82,24 +83,31 @@ for(var i = 0; i < dimensions.length; i++) {
   var
     style = dimensions[i],
     value = stylez.getPropertyValue(style),
-    hover = hoverz.getPropertyValue(style),
     orig  = baseline.getPropertyValue(style)
   ;
+  memory[style] = value;
   if (value != orig) {
     console.log(style + ": "+ value + ";");
   }
 }
 
 
+
+/******************************************/
+/**********   HOVER PART ******************/
+/******************************************/
+
 console.log("\n\nhover\n");
+hoverz = window.getComputedStyle($elem, null);
 for(var i = 0; i < dimensions.length; i++) {
   var
     style = dimensions[i],
-    value = stylez.getPropertyValue(style),
     hover = hoverz.getPropertyValue(style),
-    orig  = baseline.getPropertyValue(style)
+    before = memory[style]
   ;
-  if (hover != value) {
+  if (hover != before) {
     console.log(style + ": "+ hover + ";");
   }
 }
+
+

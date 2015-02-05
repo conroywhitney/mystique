@@ -1,21 +1,27 @@
 <html>
 <head>
-<title>SemanticUI Button</title>
+<title>100Buttons.com</title>
 
 <style type="text/css">
 
 .semanticui .primary.button {
-	display: inline-block;
-	padding: 12.5713596343994px 24px;
-	min-height: 16px;
-	font: normal normal bold normal 16px/16px Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	border: 0px none rgb(255, 255, 255);
-	border-radius: 3.99979996681213px;
-	color: rgb(255, 255, 255);
-	background: rgb(59, 131, 192) none repeat scroll 0% 0% / auto padding-box border-box;
-	text-align: center;
-	box-shadow: rgba(39, 41, 43, 0.14902) 0px 0px 0px 0px inset;
-	line-height: 16px;
+  display: inline-block;
+  padding: 12.5713596343994px 24px;
+  min-height: 16px;
+  font: normal normal bold normal 16px/16px Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 3.99979996681213px;
+  color: rgb(255, 255, 255);
+  background: rgb(59, 131, 192) none repeat scroll 0% 0% / auto padding-box border-box;
+  text-align: center;
+  box-shadow: rgba(39, 41, 43, 0.14902) 0px 0px 0px 0px inset;
+  line-height: 16px;
+  cursor: pointer;
+  transition: opacity 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s, box-shadow 0.1s ease 0s, background 0.1s ease 0s;
+}
+
+.semanticui .primary.button:hover {
+
 }
 
 .dropbox .primary.button {
@@ -27,51 +33,59 @@
   color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 0) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(22, 138, 221)), to(rgb(0, 126, 229))) repeat scroll 0% 0% / auto padding-box border-box;
   text-align: center;
+  cursor: pointer;
 }
 
 .dropbox .primary.button {
   width: 150px;
 }
 
+.dropbox .primary.button:hover {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(22, 142, 239)), to(rgb(0, 126, 229))) repeat scroll 0% 0% / auto padding-box border-box;
+}
+
 .slack .primary.button {
-	display: inline-block;
-	padding: 12px 32px;
-	font: normal normal normal normal 17.6000003814697px/normal Lato, sans-serif;
-	border: 0px;
-	border-bottom: 2px solid #194ba3;
-	border-radius: 4px;
-	color: rgb(255, 255, 255);
-	background: rgb(67, 159, 224) none repeat scroll 0% 0% / auto padding-box border-box;
-	text-align: center;
-	text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
-	line-height: normal;
-	vertical-align: bottom;
+  display: inline-block;
+  padding: 12px 32px;
+  font: normal normal normal normal 17.6000003814697px/normal Lato, sans-serif;
+  border: ;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background: rgb(67, 159, 224) none repeat scroll 0% 0% / auto padding-box border-box;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
+  line-height: normal;
+  vertical-align: bottom;
+  cursor: pointer;
+  transition: background 0.1s ease 0s;
+}
+
+.slack .primary.button {
+  border: 0px;
+  border-bottom: 2px solid #194ba3;
+}
+
+.slack .primary.button:hover {
+  background: rgb(61, 167, 242) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 
 .bootstrap .primary.button {
-	display: inline-block;
-	padding: 10px 16px;
-	font: normal normal normal normal 18px/24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	border: 1px solid rgb(86, 61, 124);
-	border-radius: 6px;
-	color: rgb(86, 61, 124);
-	text-align: center;
-	line-height: 24px;
-	vertical-align: middle;
-}
-
-.bootstrap .primary.button:hover {
   display: inline-block;
   padding: 10px 16px;
   font: normal normal normal normal 18px/24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border: 1px solid rgb(86, 61, 124);
   border-radius: 6px;
-  color: rgb(255, 255, 255);
-  background: rgb(86, 61, 124) none repeat scroll 0% 0% / auto padding-box border-box;
+  color: rgb(86, 61, 124);
   text-align: center;
   line-height: 24px;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.bootstrap .primary.button:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(86, 61, 124) none repeat scroll 0% 0% / auto padding-box border-box;
+  box-shadow: rgba(0, 0, 0, 0.121569) 0px 3px 5px 0px inset;
 }
 
 .body {
