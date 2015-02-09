@@ -1,3 +1,6 @@
+##[New SemanticUI Mystique Chrome Extension &rarr;](https://github.com/conroywhitney/mystique-chrome)
+-------
+
 # Mystique
 A prototype javascript tool for isolating the set of CSS attributes which are the minimum necessary to achieve the desired aesthetic of a given DOM element.
 
